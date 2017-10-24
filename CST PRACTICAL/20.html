@@ -1,0 +1,48 @@
+<! DOCTYPE html>
+<html>
+<head>
+<title>Event Handling</title>
+<script>
+function fLoad(){
+alert('PAGE IS LOADED!!!CLICK OK TO CONTINUE');
+}
+function fUnload(){
+alert('WAIT FOR FEW SECONDS PAGE IS BEING LOADED');
+}
+function func(x){
+x.style.background="yellow";
+}
+function func1(y){
+y=document.getElementById("demo");
+y.value=y.value.toUpperCase();
+}
+function func2(z){
+z=document.getElementById("demo1");
+z.value=z.value.toUpperCase();
+}
+</script>
+</head>
+
+<body onLoad="fLoad()" onUnLoad="fUnload()">
+<p onClick="javascript:alert('You clicked!')">Hello visitor!! Click me.</p>
+<p onDblClick="javascript:alert('You double clicked!')">Double click me.</p>
+
+<form>
+
+</br>
+ONSELECT : <input type="text" value="HELLO!!!" onselect="javascript:alert('You selected some text')"/><br><br>
+ONMOUSEOVER : <input type="text" maxlength="10" minlength="10" onMouseOver="javascript:alert('You can not type here!!')" /><br><br>
+ONFOCUS :  <input type="number"  onFocus="func(this)"/><br><br>
+ONKEYPRESS : <input type="text" onkeypress="javascript:alert('You pressed a key')" /><br><br>
+ONBLUR : <input type="text" id="demo" onblur="func1()" /><br><br>
+ONKEYUP : <input type="text" id="demo1" onkeyup="func2()" /><br><br>
+<input type="submit"  />
+<input type="reset"  />
+</form>
+
+
+
+
+
+</body>
+</html>
