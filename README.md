@@ -1,2 +1,5 @@
-# files
-contains all of my programming files of nmst
+
+
+# C Programs
+Contains all of programming files of NMST and C of @ayusin51
+
